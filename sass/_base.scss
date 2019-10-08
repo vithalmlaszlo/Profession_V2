@@ -1,0 +1,44 @@
+/* ==============================================================
+                        MEDIA-QUERIES
+=================================================================*/
+html {
+  font-size: 62.5%; //1 rem = 10px; 10px/16px =62.5%;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: 576px) {
+    font-size: 50%;
+  }
+}
+
+/* ==============================================================
+                        BASIC ++
+=================================================================*/
+/* clear right white space on mobile view */
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: visible;
+
+  @media only screen and (max-width: 576px) {
+    overflow-x: hidden;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: #323C51;
+}
+
+section {
+  height: 100vh;
+  margin-bottom: 50px;
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 0;
+  }
+}
